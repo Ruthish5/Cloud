@@ -1,14 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>To-Do List</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Flight Reservation</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>To-Do List</h1>
-  <input type="text" id="taskInput" placeholder="Enter a task" />
-  <button onclick="addTask()">Add</button>
-  <ul id="taskList"></ul>
-  <script src="app.js"></script>
+  <h1>Book Your Flight</h1>
+  <label for="passenger">Name:</label>
+  <input type="text" id="passenger" placeholder="Your name">
+  <br><br>
+  <label for="flight">Select Flight:</label>
+  <select id="flight">
+    <option value="NYC-DELTA100">NYC to LA - Delta 100</option>
+    <option value="LAX-UNITED202">LA to SF - United 202</option>
+  </select>
+  <br><br>
+  <button onclick="bookFlight()">Book Flight</button>
+  <p id="response"></p>
+  <script src="script.js"></script>
 </body>
 </html>
